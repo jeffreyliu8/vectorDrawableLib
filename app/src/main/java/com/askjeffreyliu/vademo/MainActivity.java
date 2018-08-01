@@ -8,90 +8,31 @@ import android.widget.ImageView;
 
 public class MainActivity extends AppCompatActivity {
 
-    private ImageView imageView1;
-    private ImageView imageView2;
-    private ImageView imageView3;
-    private ImageView imageView4;
-    private ImageView imageView5;
-    private ImageView imageView6;
-    private ImageView imageView7;
-    private ImageView imageView8;
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        imageView1 = findViewById(R.id.image1);
-        imageView1.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Animatable animatable = (Animatable) imageView1.getDrawable();
-                animatable.start();
-            }
-        });
+        ImageView[] imageViews = new ImageView[10];
+        imageViews[0] = findViewById(R.id.image1);
+        imageViews[1] = findViewById(R.id.image2);
+        imageViews[2] = findViewById(R.id.image3);
+        imageViews[3] = findViewById(R.id.image4);
+        imageViews[4] = findViewById(R.id.image5);
+        imageViews[5] = findViewById(R.id.image6);
+        imageViews[6] = findViewById(R.id.image7);
+        imageViews[7] = findViewById(R.id.image8);
+        imageViews[8] = findViewById(R.id.image9);
+        imageViews[9] = findViewById(R.id.image10);
 
-        imageView2 = findViewById(R.id.image2);
-        imageView2.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Animatable animatable = (Animatable) imageView2.getDrawable();
-                animatable.start();
-            }
-        });
-
-        imageView3 = findViewById(R.id.image3);
-        imageView3.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Animatable animatable = (Animatable) imageView3.getDrawable();
-                animatable.start();
-            }
-        });
-
-        imageView4 = findViewById(R.id.image4);
-        imageView4.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Animatable animatable = (Animatable) imageView4.getDrawable();
-                animatable.start();
-            }
-        });
-
-        imageView5 = findViewById(R.id.image5);
-        imageView5.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Animatable animatable = (Animatable) imageView5.getDrawable();
-                animatable.start();
-            }
-        });
-
-        imageView6 = findViewById(R.id.image6);
-        imageView6.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Animatable animatable = (Animatable) imageView6.getDrawable();
-                animatable.start();
-            }
-        });
-
-        imageView7 = findViewById(R.id.image7);
-        imageView7.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Animatable animatable = (Animatable) imageView7.getDrawable();
-                animatable.start();
-            }
-        });
-
-        imageView8 = findViewById(R.id.image8);
-        imageView8.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Animatable animatable = (Animatable) imageView8.getDrawable();
-                animatable.start();
-            }
-        });
+        for (int i = 0; i < imageViews.length; i++) {
+            imageViews[i].setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View view) {
+                    Animatable animatable = (Animatable) ((ImageView) view).getDrawable();
+                    animatable.start();
+                }
+            });
+        }
     }
 }
