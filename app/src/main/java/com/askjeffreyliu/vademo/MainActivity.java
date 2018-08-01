@@ -13,6 +13,7 @@ public class MainActivity extends AppCompatActivity {
     private ImageView imageView3;
     private ImageView imageView4;
     private ImageView imageView5;
+    private ImageView imageView6;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -60,6 +61,15 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 Animatable animatable = (Animatable) imageView5.getDrawable();
+                animatable.start();
+            }
+        });
+
+        imageView6 = findViewById(R.id.image6);
+        imageView6.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Animatable animatable = (Animatable) imageView6.getDrawable();
                 animatable.start();
             }
         });
