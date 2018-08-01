@@ -83,4 +83,15 @@
         app:layout_constraintHorizontal_chainStyle="spread"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/image4" />
+
+    <ImageView
+        android:id="@+id/image8"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:src="@drawable/avd_anim_payment_ok"
+        app:layout_constraintDimensionRatio="w,1:1"
+        app:layout_constraintEnd_toStartOf="@+id/image3"
+        app:layout_constraintHorizontal_chainStyle="spread"
+        app:layout_constraintStart_toStartOf="@+id/image2"
+        app:layout_constraintTop_toBottomOf="@+id/image5" />
 </android.support.constraint.ConstraintLayout>
