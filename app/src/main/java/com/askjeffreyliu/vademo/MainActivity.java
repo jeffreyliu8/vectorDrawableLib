@@ -13,7 +13,7 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        ImageView[] imageViews = new ImageView[11];
+        ImageView[] imageViews = new ImageView[12];
         imageViews[0] = findViewById(R.id.image1);
         imageViews[1] = findViewById(R.id.image2);
         imageViews[2] = findViewById(R.id.image3);
@@ -25,7 +25,7 @@ public class MainActivity extends AppCompatActivity {
         imageViews[8] = findViewById(R.id.image9);
         imageViews[9] = findViewById(R.id.image10);
         imageViews[10] = findViewById(R.id.image11);
-
+        imageViews[11] = findViewById(R.id.image12);
         for (int i = 0; i < imageViews.length; i++) {
             imageViews[i].setOnClickListener(new View.OnClickListener() {
                 @Override
