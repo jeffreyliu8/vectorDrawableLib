@@ -120,5 +120,16 @@
             app:layout_constraintHorizontal_chainStyle="spread"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/image7" />
+
+        <ImageView
+            android:id="@+id/image11"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:src="@drawable/avd_anim_trend_up"
+            app:layout_constraintDimensionRatio="w,1:1"
+            app:layout_constraintEnd_toStartOf="@+id/image9"
+            app:layout_constraintHorizontal_chainStyle="spread"
+            app:layout_constraintStart_toStartOf="@+id/image8"
+            app:layout_constraintTop_toBottomOf="@+id/image8" />
     </android.support.constraint.ConstraintLayout>
 </ScrollView>
